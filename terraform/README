@@ -1,0 +1,26 @@
+
+Author: Animesh Bansriyar <animesh at bansriyar.com>
+
+This terraform codebase spun up the entire infrastructure for a Search as a Service product that I founded. The entire pipeline code was written by me using Terraform at that point of time. I am hundred percent sure this code is quite useless from a syntax standpoint. It might still be a good reference point for a small infrastructure. Use it at your peril. Note that this was done with speed of development as the primary motivation and it wasn't refactored / improved upon. 
+
+
+28/Apr/2021:
+Uploading the code to github for posterity. 
+
+04/Nov/2017:
+Featurs to be supported:
+
+Types of Clusters / Nodes
+- Access Node (ssh)
+  - ports: 22
+- Jenkins for Code Deploy (Jenkins)
+- PStack Main Website (nginx, node js apps)
+- Customer Authentication (Redis, MysQL)
+- RSearch Web Service (Django RSearch App, ES)
+- Customer Analytics (Kafka, ES, Logstash)
+
+Remaining work depending on future stuff:
+
+- Implementing Auto-scaling across everything
+- Implementing proper Routing:
+  - Specifically NAT, etc

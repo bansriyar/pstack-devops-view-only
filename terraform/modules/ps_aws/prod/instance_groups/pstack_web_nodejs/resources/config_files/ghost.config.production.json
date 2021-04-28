@@ -1,0 +1,29 @@
+{
+  "url": "http://blog.somedomain.com",
+  "server": {
+    "port": 10004,
+    "host": "0.0.0.0"
+  },
+  "database": {
+    "client": "mysql",
+    "connection": {
+      "host": "cust-auth-mysql.awsmum.somedomain-internal.com",
+      "user": "pstack",
+      "password": "PstacK1010$",
+      "database": "pstack_ghost"
+    }
+  },
+  "mail": {
+    "transport": "Direct"
+  },
+  "logging": {
+    "transports": [
+      "file",
+      "stdout"
+    ]
+  },
+  "process": "systemd",
+  "paths": {
+    "contentPath": "/var/www/somedomain/blog_somedomain_com/content"
+  }
+}

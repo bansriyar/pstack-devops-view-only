@@ -1,0 +1,51 @@
+{
+    "template": "*",
+    "settings": {
+        "number_of_shards": 2,
+        "number_of_replicas" : 2,
+        "refresh_interval" : "30s",
+        "analysis": {
+            "filter": {
+                "stop_filter": {
+                    "type": "stop",
+                    "stopwords": ["_english_"]
+                },
+                "stemmer_filter": {
+                    "type": "stemmer",
+                    "name": "english"
+                }
+            },
+            "analyzer": {
+                "rhtml_analyzer": {
+                    "type": "custom",
+                    "char_filter": [
+                        "html_strip"
+                    ],
+                    "tokenizer": "standard",
+                    "filter": [
+                        "lowercase",
+                        "stop_filter",
+                        "stemmer_filter"
+                    ]
+                },
+                "rtext_analyzer": {
+                    "type": "custom",
+                    "tokenizer": "standard",
+                    "filter": [
+                        "lowercase",
+                        "stop_filter",
+                        "stemmer_filter"
+                    ]
+                }
+            },
+            "tokenizer": {
+                "rngram_tokenizer": {
+                    "type": "nGram",
+                    "min_gram": 2,
+                    "max_gram": 3,
+                    "token_chars": [ "letter", "digit"]
+                }
+            }
+        }
+    }
+}
