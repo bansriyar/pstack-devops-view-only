@@ -1,11 +1,12 @@
 
 Author: Animesh Bansriyar <animesh at bansriyar.com>
 
-This terraform codebase spun up the entire infrastructure for a Search as a Service product that I founded. The entire pipeline code was written by me using Terraform at that point of time. I am hundred percent sure this code is quite useless from a syntax standpoint. It might still be a good reference point for a small infrastructure. Use it at your peril. Note that this was done with speed of development as the primary motivation and it wasn't refactored / improved upon. 
-
+This terraform codebase spun up the entire infrastructure for a Search as a Service product that I founded. The entire pipeline code was written by me using Terraform at that point of time. 
+I am hundred percent sure this code is quite useless from a syntax standpoint. It might still be a good reference point for a small infrastructure.
+Use it at your peril. Note that this was done with speed of development as the primary motivation and it wasn't refactored / improved upon. 
 
 28/Apr/2021:
-Uploading the code to github for posterity. 
+Uploading the code to github for posterity and in read-only mode. 
 
 04/Nov/2017:
 Featurs to be supported:
